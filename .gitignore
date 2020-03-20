@@ -1,0 +1,15 @@
+.idea
+.DS_Store
+node_modules
+coverage
+*.log
+dist
+/report.html
+/stats.json
+reports/
+.scannerwork/
+/stories
+junit.xml
+.vscode
+*.iml
+*.swp
