@@ -1,6 +1,9 @@
 {
   "name": "apollon",
+  "version": "0.0.5",
   "description": "Library for user interface components",
+  "license": "MIT",
+  "author": "Daniel Winter",
   "main": "index.js",
   "private": true,
   "workspaces": [
@@ -15,8 +18,6 @@
     "type": "git",
     "url": "git+https://github.com/daniel-winter/apollon.git"
   },
-  "author": "Daniel Winter",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@semantic-release/changelog": "^5.0.0",
