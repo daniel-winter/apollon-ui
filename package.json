@@ -1,6 +1,5 @@
 {
   "name": "apollon",
-  "version": "1.0.0",
   "description": "Library for user interface components",
   "main": "index.js",
   "private": true,

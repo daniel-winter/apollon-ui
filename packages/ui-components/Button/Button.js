@@ -4,15 +4,27 @@ import classnames from 'classnames';
 
 const Button = ({
     className = null,
-    content = ''
+    content = '',
+    size = 'regular',
+    type = 'button',
+    variant = 'primary',
 }) => {
 
+    const buttonClassNames = [
+        styles.button,
+        styles[size],
+        styles[type],
+        styles[variant],
+        className,
+    ];
+
     const buttonAttributes = {
-        className: classnames(styles.button, className),
+        className: classnames(buttonClassNames),
     };
-  return (
-    <button {...buttonAttributes}>{content}</button>
-  );
+
+    return (
+        <button {...buttonAttributes}>{content}</button>
+    );
 }
 
 Button.propTypes = {
@@ -21,8 +33,9 @@ Button.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
     ]),
-    size: PropTypes.oneOf(['regular', 'large']),
+    size: PropTypes.oneOf(['regular', 'block']),
     type: PropTypes.oneOf(['button', 'submit', 'reset']),
+    variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'info', "warning"]),
 }
 
 export default Button;
