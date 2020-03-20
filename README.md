@@ -1,2 +1,2 @@
-# ui-library
-ibrary for user interface components
+# Apollon
+Library for user interface components
