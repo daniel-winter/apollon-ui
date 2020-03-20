@@ -4,13 +4,14 @@ import classnames from 'classnames';
 
 const Button = ({
     className = null,
+    content = ''
 }) => {
 
     const buttonAttributes = {
         className: classnames(styles.button, className),
     };
   return (
-    <button {...buttonAttributes}>Hello Button</button>
+    <button {...buttonAttributes}>{content}</button>
   );
 }
 
