@@ -1,2 +1,2 @@
-# ui-components
-User Interface components
+# ui-library
+ibrary for user interface components
